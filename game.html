@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- style -->
+  <link rel="stylesheet" href="./game.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <title>Game</title>
+</head>
+<body>
+  <div class="main-box">
+    <h1>Kamień, papier, nożyce - gra</h1>
+
+    <div class="buttons">
+      
+      <div class="button-el" id="rock">
+        <div class="image-container image1"></div>
+      </div>
+      
+      <div class="button-el" id="paper">
+        <div class="image-container image2"></div>
+      </div>
+      
+      <div class="button-el" id="scissors">
+        <div class="image-container image3"></div>
+      </div>  
+    </div>
+  
+    <div class="answer-container">
+      
+      <div class="answer-pseudoclass">
+        
+        <div class="answer">
+          <div class="button-el-S" id="your-move">
+            <div class="image-container-S" id="player-move-img"></div>
+          </div>
+          <p>Ty</p>
+        </div>
+  
+        <div class="answer">
+          <div class="button-el-S" id="computer-move">
+            <div class="image-container-S" id="computer-move-img"></div>
+          </div>
+          <p>Komputer</p>
+        </div>
+      </div>  
+    </div>
+
+    <div class="answer-info"></div>
+  
+    <div class="answer-container">
+      <div class="answer-container-pseudoclass">
+        <div class="text">Wygrane:</div>
+        <div class="wins" id="game-wins"></div> 
+      </div>
+      
+      <div class="answer-container-pseudoclass">
+        <div class="text">Przegrane: </div> 
+        <div class="lose" id="game-lose"></div>
+      </div>
+      
+      <div class="answer-container-pseudoclass">
+        <div class="text"> Remisy: </div>
+        <div class="tie" id="game-tie"></div> 
+      </div>
+  
+    </div>
+  
+    <button class="restart">Resetuj punkty</button>
+  </div>
+ 
+     <script src="./game.js"></script> 
+
+</body>
+</html>
